@@ -12,8 +12,8 @@ async function seedUsers() {
       name VARCHAR(255) NOT NULL,
       email TEXT NOT NULL UNIQUE,
       password TEXT NOT NULL
-    );
-  `;
+    );`
+    ;
 
   const insertedUsers = await Promise.all(
     users.map(async (user) => {
